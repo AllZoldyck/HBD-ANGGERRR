@@ -1,0 +1,150 @@
+body {
+    background-color: whitesmoke;
+  }
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .birthdayCard {
+    border-radius: 30px;
+    position: relative;
+    width: 420px;
+    height: 500px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: perspective(2000px);
+    transition: 1s;
+  }
+  .cardFront {
+    position: relative;
+    background-color: #fef0f8;
+    width: 420px;
+    height: 500px;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(118, 118, 118, 0.2),
+      30px 0 50px rgba(118, 118, 118, 0.2);
+    transition: 0.6s;
+  }
+  .bdHat {
+   width: 140px;
+    height: auto;
+    top: %;
+    left: 14%;
+    position: absolute;
+    z-index: 4;
+  }
+  .balloons {
+    position: absolute;
+    width: 270px;
+    height: auto;
+    right: -10px;
+    top: 30px;
+  }
+.cake    {
+  display: flex;
+  position: absolute;
+    width: 140px;
+    height: auto;
+
+  right:30%;
+    top: 60%;
+}
+  .taaImg {
+    display: flex;
+    justify-content: center;
+    top: 115px;
+    left: 1px;
+    position: absolute;
+    width: 235px;
+    height: auto;
+    z-index: 1;
+  }
+  .happy {
+    text-align: center;
+    left: 15%;
+    top: 84%;
+    font-size: 1.5em;
+   font-family: 'Miltonian Tattoo', serif;
+    color: hotpink;
+    position: absolute;
+    transition: 0.1s;
+    z-index: 6;
+  }
+  .cardInside {
+    position: absolute;
+    background-color: #fef0f8;
+    width: 420px;
+    height: 500px;
+    z-index: -1;
+    left: 0;
+    border-radius: 0 15px 15px 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(191, 190, 190, 0.2);
+  }
+  p {
+    line-height: 30px;
+    margin: 15px 10px 10px 30px;
+    color: #333;
+  }
+  .back {
+    font-family: Tahoma, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 30px;
+  }
+  .birthdayCard:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(116, 115, 115, 0.5),
+      0 10px 100px rgba(116, 115, 115, 0.5);
+  }
+  .birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg);
+  }
+  .birthdayCard:hover .happy {
+    visibility: hidden;
+  }
+  
+  /* Styling Tombol Awal */
+.cute-pink-button {
+  /* Gradasi dan Warna */
+  background: linear-gradient(135deg, #ff99cc, #ff69b4);
+  color: white;
+
+  /* UKURAN FONT DAN PADDING (Disesuaikan) */
+  /* Menggunakan unit 'em' untuk padding agar proporsional terhadap font-size */
+  padding: 1em 2em; 
+  
+  /* Menggunakan unit 'vw' (viewport width) agar ukuran font berubah sesuai lebar layar. */
+  font-size: clamp(1em, 2vw, 1.5em); /* Font size antara 1em dan 1.5em, tapi beradaptasi dengan lebar layar (2vw) */
+
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  outline: none;
+  
+  /* MODIFIKASI UNTUK POSISI TENGAH */
+  display: block; /* Agar tombol mengambil lebar baris penuh untuk bisa diatur tengah */
+  margin: 20px auto; /* Memberi jarak vertikal (20px) dan menengahkan horizontal (auto) */
+  width: fit-content; /* Biarkan lebar tombol menyesuaikan kontennya (teks), tapi tetap di tengah */
+}
+
+/* --- Efek Hover (Sama, Tidak Perlu Modifikasi Posisi) --- */
+.cute-pink-button:hover {
+  background: linear-gradient(135deg, #ff69b4, #ff99cc);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(255, 105, 180, 0.6);
+}
+
+/* --- Efek Active (Sama) --- */
+.cute-pink-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(255, 105, 180, 0.3);
+}
